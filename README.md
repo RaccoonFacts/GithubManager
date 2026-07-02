@@ -48,6 +48,7 @@ A personal GitHub social management desktop application built in **C# WinForms (
 - Cancel mid-scan — partial results still populate
 - Select All + bulk star in one click
 - Capped at top 100 repos per user to prevent slowdowns on large accounts
+- NEED TO ADD UNSTAR
 
 ### 🏥 Repo Health Scanner
 - Scans all your public repositories and checks for:
