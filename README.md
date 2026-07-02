@@ -85,6 +85,7 @@ Checks your progress against all current GitHub achievements using the API:
 - Live countdown to next refresh
 - Refresh counter — see how many times it's refreshed since starting
 - Open in default browser button
+- Works for basic profile readme counts
 
 ---
 
