@@ -2,6 +2,8 @@
 
 A personal GitHub social management desktop application built in **C# WinForms (.NET 10)** using the official [Octokit.net](https://github.com/octokit/octokit.net) library. Built for power users who want full control over their GitHub social presence without touching the browser.
 
+##PROBLEM: RELEASE STILL WORKS,BUT ISSUE WITH CRAWLER ON CLONED. WILL FIX SOON 7/6/2026
+
 ---
 
 ## ✨ Features
@@ -16,7 +18,7 @@ A personal GitHub social management desktop application built in **C# WinForms (
 - Sortable **Following Since** column — click to sort by days, see who's been ignoring you longest
 - Bulk follow and unfollow with throttled, rate-limit-safe execution
 - **Keep List** — permanently protect accounts from ever appearing in your unfollow list
-- **Never Follow List** — blacklist accounts the crawler will always skip; auto-unfollows on add
+- **Never Follow List** — blacklist accounts the crawler will always skip; auto-unfollows on add; import from `.txt` file
 - Deduplication — no duplicate entries across paginated API results
 - Full operation log with cancel support
 
