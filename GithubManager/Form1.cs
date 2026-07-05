@@ -47,6 +47,20 @@ namespace GithubManager
                 _keepList = new KeepList(_username);
                 _neverFollow = new NeverFollowList(_username);
 
+                // Initialize ListView columns
+                if (lvKeepList.Columns.Count == 0)
+                {
+                    lvKeepList.Columns.Add("Username", 280);
+                    lvKeepList.Columns.Add("Added", 275);
+                }
+                if (lvNeverFollow.Columns.Count == 0)
+                    lvNeverFollow.Columns.Add("Blacklisted Username", 560);
+
+                // Pre-populate Never Follow list from disk
+                lvNeverFollow.Items.Clear();
+                foreach (var login in _neverFollow.All.OrderBy(l => l))
+                    lvNeverFollow.Items.Add(new System.Windows.Forms.ListViewItem(login));
+
                 Text = $"GitHub Manager - {_username}";
                 lblStatus.Text = $"Logged in as {_username}";
 
@@ -348,7 +362,7 @@ namespace GithubManager
             if (dlg.ShowDialog() != System.Windows.Forms.DialogResult.OK) return;
 
             var lines = File.ReadAllLines(dlg.FileName)
-                .Select(l => l.Trim())
+                .Select(l => l.Trim().Trim('"').TrimEnd(',').Trim())
                 .Where(l => !string.IsNullOrEmpty(l))
                 .Distinct(StringComparer.OrdinalIgnoreCase)
                 .ToList();
@@ -573,7 +587,9 @@ namespace GithubManager
                     if (stopRequested) return false;
 
                     totalSeen += batch.Count;
-                    var candidates = batch.Where(u => !alreadyFollowed.Contains(u.Login)).ToList();
+                    var candidates = batch.Where(u =>
+                        !alreadyFollowed.Contains(u.Login) &&
+                        !(_neverFollow?.Contains(u.Login) ?? false)).ToList();
 
                     foreach (var u in candidates)
                     {
@@ -645,11 +661,12 @@ namespace GithubManager
             var candidates = txtCandidates.Lines
                 .Select(l => l.Trim())
                 .Where(l => !string.IsNullOrEmpty(l))
+                .Where(l => !(_neverFollow?.Contains(l) ?? false))
                 .ToList();
 
             if (candidates.Count == 0)
             {
-                MessageBox.Show("Add candidate usernames first (one per line).");
+                MessageBox.Show("No candidates remaining after blacklist filter.");
                 return;
             }
 
@@ -673,20 +690,20 @@ namespace GithubManager
         {
             if (_crawler == null || !_crawler.IsRunning)
             {
-                lblNextFollowCountdown.Text = "";
+                lblCrawlerStatus.Text = "Crawler stopped.";
                 return;
             }
 
             if (_crawler.NextFollowAt is DateTime next)
             {
                 var remaining = next - DateTime.Now;
-                lblNextFollowCountdown.Text = remaining > TimeSpan.Zero
-                    ? $"Next follow in: {remaining:mm\\:ss}"
+                lblCrawlerStatus.Text = remaining > TimeSpan.Zero
+                    ? $"Next follow in: {remaining:mm\\:ss}  |  Daily: {_crawler.DailyCount}/{(int)numDailyCap.Value}  |  Queue: {_crawler.RemainingCandidates}"
                     : "Following now...";
             }
             else
             {
-                lblNextFollowCountdown.Text = "Following now...";
+                lblCrawlerStatus.Text = "Following now...";
             }
         }
 
@@ -696,10 +713,9 @@ namespace GithubManager
             _countdownTimer?.Stop();
             _countdownTimer?.Dispose();
             _countdownTimer = null;
-            lblNextFollowCountdown.Text = "";
+            lblCrawlerStatus.Text = "Crawler stopped.";
             btnStartCrawler.Enabled = true;
             btnStopCrawler.Enabled = false;
-            lblCrawlerStatus.Text = "Crawler stopped.";
         }
 
         private void btnExportCandidates_Click(object sender, EventArgs e)

@@ -98,11 +98,11 @@ namespace GithubManager
             btnOpenStarUrl = new Button();
             lblStarBackStatus = new Label();
             dgvStarBack = new DataGridView();
-            lstStarBackLog = new ListBox();
             dataGridViewCheckBoxColumn1 = new DataGridViewCheckBoxColumn();
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
+            lstStarBackLog = new ListBox();
             tabRepoHealth = new TabPage();
             btnScanRepos = new Button();
             btnOpenRepoUrl = new Button();
@@ -131,8 +131,6 @@ namespace GithubManager
             btnCheckAchievements = new Button();
             lblAchievementStatus = new Label();
             dgvAchievements = new DataGridView();
-            btnOpenAchievementUrl = new Button();
-            btnHowToUnlock = new Button();
             dataGridViewTextBoxColumn13 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn14 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn15 = new DataGridViewTextBoxColumn();
@@ -140,6 +138,8 @@ namespace GithubManager
             dataGridViewTextBoxColumn17 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn18 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn19 = new DataGridViewTextBoxColumn();
+            btnOpenAchievementUrl = new Button();
+            btnHowToUnlock = new Button();
             tabControl1.SuspendLayout();
             tabOverview.SuspendLayout();
             tabDiff.SuspendLayout();
@@ -734,7 +734,7 @@ namespace GithubManager
             // 
             // btnStartCrawler
             // 
-            btnStartCrawler.Location = new Point(330, 244);
+            btnStartCrawler.Location = new Point(316, 227);
             btnStartCrawler.Name = "btnStartCrawler";
             btnStartCrawler.Size = new Size(155, 23);
             btnStartCrawler.TabIndex = 28;
@@ -744,7 +744,7 @@ namespace GithubManager
             // btnStopCrawler
             // 
             btnStopCrawler.Enabled = false;
-            btnStopCrawler.Location = new Point(491, 244);
+            btnStopCrawler.Location = new Point(490, 227);
             btnStopCrawler.Name = "btnStopCrawler";
             btnStopCrawler.Size = new Size(110, 23);
             btnStopCrawler.TabIndex = 29;
@@ -753,11 +753,12 @@ namespace GithubManager
             // 
             // lblCrawlerStatus
             // 
-            lblCrawlerStatus.Location = new Point(332, 270);
+            lblCrawlerStatus.Location = new Point(331, 270);
             lblCrawlerStatus.Name = "lblCrawlerStatus";
             lblCrawlerStatus.Size = new Size(450, 23);
             lblCrawlerStatus.TabIndex = 30;
             lblCrawlerStatus.Text = "Crawler idle.";
+          
             // 
             // lblNextFollowCountdown
             // 
@@ -993,13 +994,6 @@ namespace GithubManager
             dgvStarBack.Size = new Size(770, 395);
             dgvStarBack.TabIndex = 10;
             // 
-            // lstStarBackLog
-            // 
-            lstStarBackLog.Location = new Point(10, 458);
-            lstStarBackLog.Name = "lstStarBackLog";
-            lstStarBackLog.Size = new Size(770, 94);
-            lstStarBackLog.TabIndex = 11;
-            // 
             // dataGridViewCheckBoxColumn1
             // 
             dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
@@ -1016,6 +1010,13 @@ namespace GithubManager
             // 
             dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
+            // lstStarBackLog
+            // 
+            lstStarBackLog.Location = new Point(10, 458);
+            lstStarBackLog.Name = "lstStarBackLog";
+            lstStarBackLog.Size = new Size(770, 94);
+            lstStarBackLog.TabIndex = 11;
+            // 
             // tabRepoHealth
             // 
             tabRepoHealth.Controls.Add(btnScanRepos);
@@ -1025,7 +1026,7 @@ namespace GithubManager
             tabRepoHealth.Controls.Add(dgvRepoHealth);
             tabRepoHealth.Location = new Point(4, 24);
             tabRepoHealth.Name = "tabRepoHealth";
-            tabRepoHealth.Size = new Size(192, 72);
+            tabRepoHealth.Size = new Size(792, 672);
             tabRepoHealth.TabIndex = 5;
             tabRepoHealth.Text = "Repo Health";
             // 
@@ -1132,7 +1133,7 @@ namespace GithubManager
             tabProfile.Controls.Add(webProfile);
             tabProfile.Location = new Point(4, 24);
             tabProfile.Name = "tabProfile";
-            tabProfile.Size = new Size(192, 72);
+            tabProfile.Size = new Size(792, 672);
             tabProfile.TabIndex = 6;
             tabProfile.Text = "Profile";
             tabProfile.Enter += tabProfile_Enter;
@@ -1216,7 +1217,7 @@ namespace GithubManager
             tabAchievements.Controls.Add(btnHowToUnlock);
             tabAchievements.Location = new Point(4, 24);
             tabAchievements.Name = "tabAchievements";
-            tabAchievements.Size = new Size(192, 72);
+            tabAchievements.Size = new Size(792, 672);
             tabAchievements.TabIndex = 7;
             tabAchievements.Text = "Achievements";
             // 
@@ -1248,24 +1249,6 @@ namespace GithubManager
             dgvAchievements.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvAchievements.Size = new Size(770, 440);
             dgvAchievements.TabIndex = 2;
-            // 
-            // btnOpenAchievementUrl
-            // 
-            btnOpenAchievementUrl.Location = new Point(10, 490);
-            btnOpenAchievementUrl.Name = "btnOpenAchievementUrl";
-            btnOpenAchievementUrl.Size = new Size(160, 23);
-            btnOpenAchievementUrl.TabIndex = 3;
-            btnOpenAchievementUrl.Text = "Open in Browser";
-            btnOpenAchievementUrl.Click += btnOpenAchievementUrl_Click;
-            // 
-            // btnHowToUnlock
-            // 
-            btnHowToUnlock.Location = new Point(178, 490);
-            btnHowToUnlock.Name = "btnHowToUnlock";
-            btnHowToUnlock.Size = new Size(160, 23);
-            btnHowToUnlock.TabIndex = 4;
-            btnHowToUnlock.Text = "How To Unlock";
-            btnHowToUnlock.Click += btnHowToUnlock_Click;
             // 
             // dataGridViewTextBoxColumn13
             // 
@@ -1301,6 +1284,24 @@ namespace GithubManager
             // 
             dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
             dataGridViewTextBoxColumn19.ReadOnly = true;
+            // 
+            // btnOpenAchievementUrl
+            // 
+            btnOpenAchievementUrl.Location = new Point(10, 490);
+            btnOpenAchievementUrl.Name = "btnOpenAchievementUrl";
+            btnOpenAchievementUrl.Size = new Size(160, 23);
+            btnOpenAchievementUrl.TabIndex = 3;
+            btnOpenAchievementUrl.Text = "Open in Browser";
+            btnOpenAchievementUrl.Click += btnOpenAchievementUrl_Click;
+            // 
+            // btnHowToUnlock
+            // 
+            btnHowToUnlock.Location = new Point(178, 490);
+            btnHowToUnlock.Name = "btnHowToUnlock";
+            btnHowToUnlock.Size = new Size(160, 23);
+            btnHowToUnlock.TabIndex = 4;
+            btnHowToUnlock.Text = "How To Unlock";
+            btnHowToUnlock.Click += btnHowToUnlock_Click;
             // 
             // Form1
             // 

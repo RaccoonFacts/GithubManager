@@ -34,7 +34,13 @@
             File.WriteAllText(_path, json);
         }
 
-        public void Add(string login) { _entries.Add(login); Save(); }
+        public void Add(string login)
+        {
+            var clean = login.Trim().Trim('"').TrimEnd(',').Trim();
+            if (string.IsNullOrEmpty(clean)) return;
+            _entries.Add(clean);
+            Save();
+        }
         public void Remove(string login) { _entries.Remove(login); Save(); }
         public bool Contains(string login) => _entries.Contains(login);
         public IReadOnlyCollection<string> All => _entries;

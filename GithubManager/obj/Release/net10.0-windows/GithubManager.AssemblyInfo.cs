@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GithubManager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+148b1304977a61e0f63798646c763a5b6d1fb7bb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+716e31adbf051c8af54b71a7954bd0b9fb00e3a5")]
 [assembly: System.Reflection.AssemblyProductAttribute("GithubManager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GithubManager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
