@@ -34,10 +34,6 @@
       "RelativeMoniker": "D:0:0:{020581FF-33A6-BB51-0DAB-638E1A8CA44D}|GithubManager\\GithubManager.csproj|solutionrelative:githubmanager\\neverfollowlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:2:0:{020581FF-33A6-BB51-0DAB-638E1A8CA44D}|GithubManager\\GithubManager.csproj|c:\\users\\luck\\source\\repos\\githubmanager\\githubmanager\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:2:0:{020581FF-33A6-BB51-0DAB-638E1A8CA44D}|GithubManager\\GithubManager.csproj|solutionrelative:githubmanager\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5F34733B-C42D-4BFE-AFB7-47E4990905DF}|GithubManager\\GithubManager.csproj|C:\\Users\\Luck\\source\\repos\\GithubManager\\githubmanager\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5F34733B-C42D-4BFE-AFB7-47E4990905DF}|GithubManager\\GithubManager.csproj|solutionrelative:githubmanager\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -68,6 +64,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{020581FF-33A6-BB51-0DAB-638E1A8CA44D}|GithubManager\\GithubManager.csproj|c:\\users\\luck\\source\\repos\\githubmanager\\githubmanager\\form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
       "RelativeMoniker": "D:0:0:{020581FF-33A6-BB51-0DAB-638E1A8CA44D}|GithubManager\\GithubManager.csproj|solutionrelative:githubmanager\\form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{020581FF-33A6-BB51-0DAB-638E1A8CA44D}|GithubManager\\GithubManager.csproj|c:\\users\\luck\\source\\repos\\githubmanager\\githubmanager\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:2:0:{020581FF-33A6-BB51-0DAB-638E1A8CA44D}|GithubManager\\GithubManager.csproj|solutionrelative:githubmanager\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -89,8 +89,7 @@
               "RelativeToolTip": "GithubManager\\Neverfollowlist.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAQwC8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-05T19:28:43.637Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-05T19:28:43.637Z"
             },
             {
               "$type": "Document",
@@ -114,8 +113,7 @@
               "RelativeToolTip": "GithubManager\\Autofollowbackservice.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAcwEEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-30T20:57:15.717Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-30T20:57:15.717Z"
             },
             {
               "$type": "Document",
@@ -127,12 +125,11 @@
               "RelativeToolTip": "GithubManager\\Followcrawler.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAqwFEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-30T16:48:09.922Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-30T16:48:09.922Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Luck\\source\\repos\\GithubManager\\GithubManager\\Program.cs",
               "RelativeDocumentMoniker": "GithubManager\\Program.cs",
@@ -144,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Luck\\source\\repos\\GithubManager\\GithubManager\\Form1.cs",
               "RelativeDocumentMoniker": "GithubManager\\Form1.cs",
@@ -163,8 +160,7 @@
               "RelativeToolTip": "GithubManager\\Form1.cs",
               "ViewState": "AgIAALAEAAAAAAAAAAAcwM4EAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-30T20:25:05.509Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-30T20:25:05.509Z"
             },
             {
               "$type": "Document",
@@ -189,8 +185,7 @@
               "RelativeToolTip": "GithubManager\\Followtracker.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAcwCMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-30T20:17:52.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-30T20:17:52.884Z"
             },
             {
               "$type": "Document",
@@ -202,24 +197,22 @@
               "RelativeToolTip": "..\\..\\..\\AppData\\Roaming\\GithubManager\\never_follow_RaccoonFacts.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-07-05T19:29:31.461Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-05T19:29:31.461Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Luck\\source\\repos\\GithubManager\\GithubManager\\Form1.cs",
               "RelativeDocumentMoniker": "GithubManager\\Form1.cs",
               "ToolTip": "C:\\Users\\Luck\\source\\repos\\GithubManager\\GithubManager\\Form1.cs [Design]",
               "RelativeToolTip": "GithubManager\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-05T00:55:14.246Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-07-05T00:55:14.246Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "Tokenstorage.cs",
               "DocumentMoniker": "C:\\Users\\Luck\\source\\repos\\GithubManager\\GithubManager\\Tokenstorage.cs",
               "RelativeDocumentMoniker": "GithubManager\\Tokenstorage.cs",
@@ -231,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "Githubsocialmanager.cs",
               "DocumentMoniker": "C:\\Users\\Luck\\source\\repos\\GithubManager\\GithubManager\\Githubsocialmanager.cs",
               "RelativeDocumentMoniker": "GithubManager\\Githubsocialmanager.cs",
@@ -243,7 +236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "Achievementchecker.cs",
               "DocumentMoniker": "C:\\Users\\Luck\\source\\repos\\GithubManager\\GithubManager\\Achievementchecker.cs",
               "RelativeDocumentMoniker": "GithubManager\\Achievementchecker.cs",
@@ -255,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "GithubManager.csproj",
               "DocumentMoniker": "C:\\Users\\Luck\\source\\repos\\GithubManager\\GithubManager\\GithubManager.csproj",
               "RelativeDocumentMoniker": "GithubManager\\GithubManager.csproj",
@@ -267,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "Keeplist.cs",
               "DocumentMoniker": "C:\\Users\\Luck\\source\\repos\\GithubManager\\GithubManager\\Keeplist.cs",
               "RelativeDocumentMoniker": "GithubManager\\Keeplist.cs",
@@ -279,15 +272,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "Form1.resx",
               "DocumentMoniker": "C:\\Users\\Luck\\source\\repos\\GithubManager\\GithubManager\\Form1.resx",
               "RelativeDocumentMoniker": "GithubManager\\Form1.resx",
               "ToolTip": "C:\\Users\\Luck\\source\\repos\\GithubManager\\GithubManager\\Form1.resx",
               "RelativeToolTip": "GithubManager\\Form1.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2026-06-30T16:46:01.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-30T16:46:01.057Z"
             }
           ]
         }
