@@ -2,6 +2,8 @@
 
 A personal GitHub social management desktop application built in **C# WinForms (.NET 10)** using the official [Octokit.net](https://github.com/octokit/octokit.net) library. Built for power users who want full control over their GitHub social presence without touching the browser.
 
+##PROBLEM: RELEASE STILL WORKS,BUT ISSUE WITH CRAWLER ON CLONED. WILL FIX SOON 7/6/2026
+
 ---
 
 ## ✨ Features
